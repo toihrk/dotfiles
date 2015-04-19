@@ -1,0 +1,14 @@
+[user]
+	name = toihrk
+	emial = toihrk@me.com
+	email = toihrk@me.com
+[core]
+	editor = emacs
+[color]
+	ui = auto
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
+[alias]
+ 	m = merge --no-ff

@@ -1,0 +1,7 @@
+.DS_Store
+*.log
+*.swp
+.idea
+/.emacs.d/#*
+/.emacs.d/undohist/*
+/.emacs.d/backups/*

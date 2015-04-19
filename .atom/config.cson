@@ -1,0 +1,19 @@
+"*":
+  editor:
+    invisibles: {}
+    fontSize: 17
+  core:
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  "emacs-mode":
+    hideTabs: false
+    hideSidebar: false
+    useEmacsCursor: true
+    useFuzzyFileFinder: false
+    useFuzzyBufferFinder: false
+  "exception-reporting":
+    userId: "3d729b1d-a55d-a6a2-131a-7f04b0f943ef"
+  welcome:
+    showOnStartup: false

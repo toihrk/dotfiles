@@ -1,0 +1,345 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/" . "hiroki/")
+ ("/Users/hiroki/Development/hobby/toihrk.me/assets/" . "stylesheets/")
+ ("/Users/hiroki/Development/hobby/toihrk.me/source/" . "layouts/")
+ ("/Users/hiroki/Library/Application Support/Google/Chrome/Default/Extensions/ldcnohnnlpgglecmkldelbmiokgmikno/4.0.4_0/" . "skin/")
+ ("/Users/hiroki/Library/Application Support/Google/Chrome/Default/Extensions/ldcnohnnlpgglecmkldelbmiokgmikno/4.0.4_0/third_party/" . "MochiKit/")
+ ("/Users/hiroki/Library/Application Support/Google/Chrome/Default/Extensions/ldcnohnnlpgglecmkldelbmiokgmikno/" . "4.0.4_0/")
+ ("/Users/hiroki/Library/Application Support/Google/Chrome/Default/Extensions/" . "ldcnohnnlpgglecmkldelbmiokgmikno/")
+ ("/Users/hiroki/Library/Application Support/Google/Chrome/Default/" . "Extensions/")
+ ("/Users/hiroki/Library/Application Support/Google/Chrome/" . "Default/")
+ ("/Users/hiroki/Library/Application Support/Google/" . "Chrome/")
+ ("/Users/hiroki/Library/Application Support/" . "Google/")
+ ("/Users/hiroki/Library/" . "Application Support/")
+ ("/Users/hiroki/Development/hobby/toihrk.me/" . "source/")
+ ("/Applications/MAMP/" . "htdocs/")
+ ("/Applications/" . "MAMP/")
+ ("/Users/hiroki/Development/sotuken/php/" . "bookshelf-php-mysql/")
+ ("/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-mysql/" . "public/")
+ ("/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-mysql/app/views/" . "layouts/")
+ ("/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-mysql/app/" . "views/")
+ ("/Users/hiroki/Development/sotuken/ruby/" . "bookshelf-ruby-mysql/")
+ ("/Users/hiroki/Development/sotuken/" . "ruby/")
+ ("/Users/hiroki/Development/hobby/watchlist/app/assets/" . "javascripts/")
+ ("/Users/hiroki/Development/hobby/watchlist/db/" . "migrate/")
+ ("/Users/hiroki/Development/hobby/watchlist/app/views/" . "items/")
+ ("/Users/hiroki/Development/hobby/watchlist/app/" . "assets/")
+ ("/Users/hiroki/Development/hobby/watchlist/" . "app/")
+ ("/Users/hiroki/Development/hobby/yes-or-no/app/views/" . "questions/")
+ ("/Users/hiroki/Development/hobby/yes-or-no/config/" . "initializers/")
+ ("/Users/hiroki/Development/hobby/yes-or-no/" . "app/")
+ ("/Users/hiroki/Development/hobby/who-is-masuda/app/views/" . "layouts/")
+ ("/Users/hiroki/Development/hobby/who-is-masuda/app/assets/" . "stylesheets/")
+ ("/Users/hiroki/Development/hobby/yes-or-no/app/assets/" . "javascripts/")
+ ("/Users/hiroki/Development/hobby/yes-or-no/app/" . "views/")
+ ("/Users/hiroki/Development/hobby/who-is-masuda/app/controllers/" . "users/")
+ ("/Users/hiroki/Development/hobby/who-is-masuda/config/" . "initializers/")
+ ("/Users/hiroki/Development/hobby/who-is-masuda/app/" . "views/")
+ ("/Users/hiroki/Development/hobby/who-is-masuda/" . "app/")
+ ("/Users/hiroki/Development/dely/dely-api/db/" . "migrate/")
+ ("/Users/hiroki/Development/dely/dely-api/docs/api/admin_v1/" . "admin_accounts/")
+ ("/Users/hiroki/Development/dely/dely-api/docs/api/" . "admin_v1/")
+ ("/Users/hiroki/Development/dely/dely-api/docs/" . "api/")
+ ("/Users/hiroki/Development/dely/dely-web/app/shop/coffee/" . "controllers/")
+ ("/Users/hiroki/Development/dely/dely-web/app/admin/coffee/" . "controllers/")
+ ("/Users/hiroki/Development/dely/dely-web/app/admin/" . "coffee/")
+ ("/Users/hiroki/Development/dely/dely-api/spec/" . "factories/")
+ ("/Users/hiroki/Development/dely/dely-api/app/controllers/shop_v1/" . "me/")
+ ("/Users/hiroki/Development/dely/dely-api/app/models/" . "order/")
+ ("/Users/hiroki/Development/dely/dely-api/app/controllers/v1/" . "user/")
+ ("/Users/hiroki/Development/dely/dely-api/app/controllers/" . "shop_v1/")
+ ("/Users/hiroki/Development/dely/dely-api/app/" . "models/")
+ ("/Users/hiroki/Development/dely/dely-api/" . "app/")
+ ("/Users/hiroki/" . "Development/")
+ ("/Users/hiroki/Development/hobby/kagami/client/vendor/" . "bootstrap/")
+ ("/Users/hiroki/Development/hobby/kagami/client/" . "coffee/")
+ ("/Users/hiroki/Development/hobby/kagami/" . "client/")
+ ("/Users/hiroki/Development/hobby/" . "kagami/")
+ ("/Users/hiroki/Development/kagami/" . "client/")
+ ("/Users/hiroki/Development/dely/dely-web/app/user/sass/" . "pc/")
+ ("/Users/hiroki/Development/dely/dely-web/app/user/coffee/" . "services/")
+ ("/Users/hiroki/Development/dely/dely-web/app/user/" . "coffee/")
+ ("/Users/hiroki/Development/dely/dely-web/app/" . "admin/")
+ ("/Users/hiroki/Development/dely/dely-web/" . "app/")
+ ("/Users/hiroki/Development/dely/" . "dely-api/")
+ ("/Users/hiroki/Development/" . "hobby/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/hiroki/Development/hobby/kagami/client/coffee/"
+ "/Users/hiroki/Development/hobby/toihrk.me/"
+ "/Users/hiroki/Development/hobby/toihrk.me/views/"
+ "/Users/hiroki/Development/hobby/toihrk.me/source/"
+ "/Users/hiroki/Development/hobby/toihrk.me/source/layouts/"
+ "/Users/hiroki/Development/hobby/toihrk.me/source/stylesheets/"
+ "/Users/hiroki/Development/hobby/at0054ml/"
+ "/Users/hiroki/Library/Application Support/Google/Chrome/Default/Extensions/ldcnohnnlpgglecmkldelbmiokgmikno/4.0.4_0/"
+ "/Users/hiroki/Library/Application Support/Google/Chrome/Default/Extensions/ldcnohnnlpgglecmkldelbmiokgmikno/4.0.4_0/third_party/MochiKit/"
+ "/Users/hiroki/Library/Application Support/Google/Chrome/Default/Extensions/ldcnohnnlpgglecmkldelbmiokgmikno/4.0.4_0/lib/"
+ "/Users/hiroki/Development/hobby/watchlist/app/controllers/"
+ "/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-mysql/config/"
+ "/Applications/MAMP/htdocs/"
+ "/Users/hiroki/Development/sotuken/php/bookshelf-php-mysql/"
+ "/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-mongodb/public/"
+ "/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-mysql/"
+ "/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-mongodb/"
+ "/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-sqlite/public/"
+ "/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-sqlite/"
+ "/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-mysql/public/"
+ "/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-mysql/app/views/layouts/"
+ "/Users/hiroki/Development/hobby/who-is-masuda/config/"
+ "/Users/hiroki/Development/hobby/who-is-masuda/app/views/layouts/"
+ "/Users/hiroki/Development/hobby/who-is-masuda/app/controllers/users/"
+ "/Users/hiroki/Development/hobby/who-is-masuda/app/controllers/"
+ "/Users/hiroki/Development/hobby/who-is-masuda/app/views/posts/"
+ "/Users/hiroki/Development/hobby/who-is-masuda/"
+ "/Users/hiroki/Desktop/"
+ "/Users/hiroki/Development/hobby/watchlist/app/views/items/"
+ "/Users/hiroki/Development/hobby/watchlist/app/assets/javascripts/"
+ "/Users/hiroki/Development/hobby/watchlist/app/views/layouts/"
+ "/Users/hiroki/Development/hobby/watchlist/app/assets/stylesheets/"
+ "/Users/hiroki/Development/hobby/watchlist/app/views/urls/"
+ "/Users/hiroki/Development/hobby/watchlist/config/"
+ "/Users/hiroki/Development/hobby/watchlist/app/models/"
+ "/Users/hiroki/Development/hobby/watchlist/db/migrate/"
+ "/Users/hiroki/Development/hobby/watchlist/"
+ "/Users/hiroki/Development/hobby/watchlist/db/"
+ "/Users/hiroki/Development/hobby/yes-or-no/app/models/"
+ "/Users/hiroki/Development/hobby/yes-or-no/app/views/questions/"
+ "/Users/hiroki/Development/hobby/yes-or-no/app/controllers/"
+ "/Users/hiroki/Development/hobby/yes-or-no/app/views/layouts/"
+ "/Users/hiroki/Development/hobby/yes-or-no/app/views/welcome/"
+ "/Users/hiroki/Development/hobby/yes-or-no/config/initializers/"
+ "/Users/hiroki/Development/hobby/who-is-masuda/app/models/"
+ "/Users/hiroki/Development/hobby/yes-or-no/config/"
+ "/Users/hiroki/Development/hobby/yes-or-no/app/assets/javascripts/"
+ "/Users/hiroki/Development/hobby/yes-or-no/app/assets/stylesheets/"
+ "/Users/hiroki/Development/hobby/who-is-masuda/app/assets/stylesheets/"
+ "/Users/hiroki/Development/hobby/yes-or-no/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "index.coffee"
+ "app.rb"
+ "layout.slim"
+ "index.slim"
+ "Gemfile"
+ "config.rb"
+ "index.html.slim"
+ "app.styl"
+ "manifest.json"
+ "Base.js"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/hiroki/Development/hobby/kagami/client/coffee/" (21611 2498 0 0) "usage.coffee" "pen.coffee" "index.coffee" "config.coffee" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/kagami/client/" (21611 62690 0 0) "vendor/" "stylus/" "package.json" "jade/" "img/" "coffee/" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/kagami/" (21781 39539 0 0) "views/" "README.md" "public/" "Procfile" "package.json" "node_modules/" "index.coffee" "Gruntfile.coffee" "config.json" "client/" "cache/" "app.json" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/" (21781 39534 0 0) "yes-or-no/" "who-is-masuda/" "watchlist/" "ugokuonaho/" "toihrk.me/" "toihrk.github.io/" "Point/" "kagami/" "jisui/" "jgs/" "hyoka/" "haizoku15/" "dev-blog/" "blog/" ".ruby-version" ".DS_Store" "../" "./")
+
+ ("/Users/" (21580 24392 0 0) "Shared/" "hiroki/" "Guest/" ".localized" "../" "./")
+
+ ("/Users/hiroki/" (21781 39592 0 0) "VirtualBox VMs/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "Documents/" "Development/" "desktop_tmp/" "Desktop/" "Applications/" ".zshrc.backup" ".zshrc" ".zshenv" ".zsh-history" ".zcompdump" ".w3m/" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim/" ".Trash/" ".subversion/" ".ssh/" ".skk-study.BAK" ".skk-study" ".skk-record" ".skk-jisyo.BAK" ".skk-jisyo" ".rbenv/" ".phantomjs/" ".npm_completion" ".npm/" ".nodebrew/" ".node-gyp/" ".netrc" ".mysql_history" ".mongorc.js" ".local/" ".heroku/" ".gitconfig" ".gem/" ".emacs.d/" ".DS_Store" ".dropbox/" ".dbshell" ".curlrc" ".cups/" ".config/" ".coffee_history" ".CFUserTextEncoding" ".cache/" ".bash_profile" ".bash_history" ".atom/" "../" "./")
+
+ ("/Users/hiroki/.emacs.d/" (21769 45392 0 0) "undohist/" "src/" "site-lisp/" "recentf" "local-elisp/" "init.el~" "init.el" "ido.last" "history" "elpa/" "elisp/" "backups/" "auto-save-list/" "auto-install/" "ac-comphist.dat" "#!Users!hiroki!Development!hobby!who-is-masuda!Gemfile#" "#!Users!hiroki!Development!forKubota!Gemfile#" "#!Users!hiroki!Development!forKubota!app.rb#" "#!Users!hiroki!Development!dely!staging!dely-web!src!jade!layout!header.jade#" "#!Users!hiroki!Development!dely!dely-api!app!controllers!shop_v1!me!shop_accounts_controller.rb#" "#!Applications!MAMP!htdocs!wp!self-whitening!wp-content!themes!self-whitening!404.php#" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/toihrk.me/assets/stylesheets/" (21769 44771 0 0) "toihrk.styl" "normalize.css" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/toihrk.me/assets/" (21769 43231 0 0) "stylesheets/" "javascripts/" "images/" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/toihrk.me/" (21769 44402 0 0) "views/" "Gemfile.lock" "Gemfile" "assets/" "app.rb" ".gitignore" ".#app.rb" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/toihrk.me/views/" (21769 44533 0 0) "layout.slim" "index.slim" "about.slim" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/toihrk.me/source/" (21769 43231 0 0) "layouts/" "index.html.slim" "assets/" "about.html.slim" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/toihrk.me/source/images/" (21757 54718 0 0) "middleman.png" "background.png" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/toihrk.me/source/layouts/" (21767 38941 0 0) "layout.slim" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/toihrk.me/source/stylesheets/" (21757 55015 0 0) "normalize.css" "app.styl" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/at0054ml/" (21765 31778 0 0) "vendor/" "tmp/" "test/" "README.rdoc" "Rakefile" "public/" "log/" "lib/" "Gemfile.lock" "Gemfile" "db/" "config.ru" "config/" "bin/" "app/" ".gitignore" "../" "./")
+
+ ("/Users/hiroki/Library/Application Support/Google/Chrome/Default/Extensions/ldcnohnnlpgglecmkldelbmiokgmikno/4.0.4_0/skin/" (21582 65362 0 0) "win/" "webhook.png" "video.png" "tick.png" "text.png" "taberareloo.png" "star.png" "snap-top-right.png" "snap-top-left.png" "snap-bottom-right.png" "snap-bottom-left.png" "regular.png" "reblog.ico" "quote.png" "pick-naver.png" "photo.png" "music.png" "mac/" "local.ico" "loading.gif" "link.png" "item.ico" "instapaper.png" "gyazo.ico" "google-bookmark.png" "gmail.ico" "fork64.png" "fork32.png" "fork19.png" "fork16.png" "fork128.png" "fork.svg" "firefox.ico" "extension.gif" "enabled.png" "empty.png" "disabled.png" "delicious.png" "default.png" "cross.png" "conversation.png" "chromium.ico" "audio.png" "arrow-up.png" "arrow-down.png" "accept.png" "4u.ico" "../" "./")
+
+ ("/Users/hiroki/Library/Application Support/Google/Chrome/Default/Extensions/ldcnohnnlpgglecmkldelbmiokgmikno/4.0.4_0/third_party/MochiKit/" (21582 65362 0 0) "Style.js" "Signal.js" "DOM.js" "Base.js" "../" "./")
+
+ ("/Users/hiroki/Library/Application Support/Google/Chrome/Default/Extensions/ldcnohnnlpgglecmkldelbmiokgmikno/4.0.4_0/third_party/" (21582 65362 0 0) "zipjs/" "SparkMD5/" "semver/" "punycode/" "node/" "MochiKit/" "../" "./")
+
+ ("/Users/hiroki/Library/Application Support/Google/Chrome/Default/Extensions/ldcnohnnlpgglecmkldelbmiokgmikno/4.0.4_0/lib/" (21582 65362 0 0) "utils.js" "userscripts.js" "sandbox.js" "repository.js" "proto.js" "popup.js" "patch.js" "options.js" "models.js" "menu.js" "extractors.js" "content.js" "command_queue.js" "background.js" "../" "./")
+
+ ("/Users/hiroki/Library/Application Support/Google/Chrome/Default/Extensions/ldcnohnnlpgglecmkldelbmiokgmikno/4.0.4_0/" (21582 65362 0 0) "third_party/" "taberareloo.js" "styles/" "skin/" "sandbox.html" "popup.html" "options.html" "manifest.json" "lib/" "_metadata/" "_locales/" "../" "./")
+
+ ("/Users/hiroki/Library/Application Support/Google/Chrome/Default/Extensions/ldcnohnnlpgglecmkldelbmiokgmikno/" (21590 65007 0 0) "4.0.4_0/" "../" "./")
+
+ ("/Users/hiroki/Library/Application Support/Google/Chrome/Default/Extensions/" (21761 50713 0 0) "Temp/" "pjkljhegncpnkpknbcohdijeoejaedia/" "okneonigbfnolfkmfgjmaeniipdjkgkl/" "npaimmjgbgkbpbmlbokncaflgoenlfpf/" "nmmhkkegccagdldgiimedpiccmgmieda/" "ldcnohnnlpgglecmkldelbmiokgmikno/" "kgljgnbhcigffgoifhjbbifhbdkapmgm/" "jnihajbhpnppcggbcgedagnkighmdlei/" "jdidcgkdggndpodjbipodfefnpgjooeh/" "icpgjfneehieebagbmdbhnlpiopdcmna/" "hgmloofddffdnphfgcellkdfbfbjeloo/" "hbdpomandigafcibbmofojjchbcdagbl/" "felcaaldnbdncclmgdcncolpebgiejap/" "eecoahjklhopckkiefihjloeidikepdh/" "dbfkmjnfngfkpgdndjhfcfflhdggdmab/" "coobgpohoikkiipiblmjeljniedjpjpf/" "clambabckinoeihmjaakmnhicmlbkjbc/" "ciagpekplgpbepdgggflgmahnjgiaced/" "blpcfgokakmgnkcojhhkbfbldkacnbeo/" "apdfllckaahabafndbhieahigkjlhalf/" "aohghmighlieiainnegkcijnfilokake/" "aapocclcgogkmnckokdopfmhonfmgoek/" "../" "./")
+
+ ("/Users/hiroki/Library/Application Support/Google/Chrome/Default/" (21761 61814 0 0) "Web Data-journal" "Web Data" "Web Applications/" "Visited Links" "TransportSecurity" "Top Sites-journal" "Top Sites" "Sync Extension Settings/" "Sync Data Backup/" "Sync Data/" "Storage/" "Shortcuts-journal" "Shortcuts" "Session Storage/" "Secure Preferences" "README" "QuotaManager-journal" "QuotaManager" "Preferences" "Pepper Data/" "Origin Bound Certs-journal" "Origin Bound Certs" "Network Action Predictor-journal" "Network Action Predictor" "Login Data-journal" "Login Data" "Local Storage/" "Local Extension Settings/" "Last Tabs" "Last Session" "IndexedDB/" "History-journal" "History" "GPUCache/" "Google Profile Picture.png" "GCM Store/" "File System/" "Favicons-journal" "Favicons" "Extensions/" "Extension State/" "Extension Rules/" "Extension Cookies-journal" "Extension Cookies" "databases/" "Current Tabs" "Current Session" "Cookies-journal" "Cookies" "Bookmarks.bak" "Bookmarks" "Application Cache/" "../" "./")
+
+ ("/Users/hiroki/Library/Application Support/Google/Chrome/" (21761 61802 0 0) "WidevineCDM/" "Webstore Downloads/" "SingletonSocket" "SingletonLock" "SingletonCookie" "Safe Browsing UwS List Prefix Set" "Safe Browsing UwS List" "Safe Browsing IP Blacklist" "Safe Browsing Extension Blacklist" "Safe Browsing Download Whitelist" "Safe Browsing Download" "Safe Browsing Csd Whitelist" "Safe Browsing Cookies-journal" "Safe Browsing Cookies" "Safe Browsing Bloom Prefix Set" "Safe Browsing Bloom" "RunningChromeVersion" "pnacl/" "PepperFlash/" "Local State" "First Run" "EVWhitelist/" "ev_hashes_whitelist.bin" "Default/" "Certificate Revocation Lists" "Avatars/" "App Shim Socket" "../" "./")
+
+ ("/Users/hiroki/Library/Application Support/Google/" (21580 37602 0 0) "RLZ/" "JapaneseInput/" "Chrome/" "../" "./")
+
+ ("/Users/hiroki/Library/Application Support/" (21743 15749 0 0) "Xcode/" "uTorrent/" "SyncServices/" "Sublime Text 3/" "Skype/" "Serato/" "Sequel Pro/" "Quick Look/" "project/" "Preview/" "Pioneer/" "org.openemu.OEXPCCAgent.Agents/" "OpenOffice/" "OpenEmu/" "Ofi Labs/" "obs-studio/" "NVIDIA/" "NotificationCenter/" "node-webkit/" "Mozilla/" "MobileSync/" "Librarian/" "KagamiClient/" "Kagami/" "JoypadConnect/" "iTerm/" "iLifeAssetManagement/" "iCloud/" "Google/" "GitHub for Mac/" "Firefox/" "Dolphin/" "Dock/" "Cyberduck/" "CrashReporter/" "com.github.GitHub.ShipIt/" "com.github.atom.ShipIt/" "com.apple.TCC/" "com.apple.spotlight/" "com.apple.sbd/" "com.apple.QuickLook/" "CloudDocs/" "CallHistoryTransactions/" "CallHistoryDB/" "Atom/" "AquaSKK/" "App Store/" "Aperture/" "Alfred/" "Adobe/" "AddressBook/" "../" "./")
+
+ ("/Users/hiroki/Library/" (21729 32141 0 0) "WebKit/" "Voices/" "VirtualBox/" "SyncedPreferences/" "Spelling/" "Sounds/" "Services/" "Screen Savers/" "Saved Application State/" "Safari/" "PubSub/" "Printers/" "Preferences/" "PreferencePanes/" "Pioneer/" "MobileDevice/" "Mobile Documents/" "Messages/" "Mail/" "Logs/" "LaunchAgents/" "LanguageModeling/" "Keychains/" "Keyboard Layouts/" "iTunes/" "Internet Plug-Ins/" "Input Methods/" "iMovie/" "IdentityServices/" "Group Containers/" "Google/" "GameKit/" "Fonts/" "FontCollections/" "Favorites/" "Dictionaries/" "Developer/" "Cookies/" "Containers/" "Compositions/" "com.apple.nsurlsessiond/" "Colors/" "ColorPickers/" "Calendars/" "Caches/" "Autosave Information/" "Audio/" "Assistants/" "Application Support/" "Application Scripts/" "Address Book Plug-Ins/" "Accounts/" ".localized" "../" "./")
+
+ ("/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-mysql/" (21732 31220 0 0) "vendor/" "tmp/" "test/" "README.rdoc" "Rakefile" "public/" "log/" "lib/" "Gemfile.lock" "Gemfile" "db/" "config.ru" "config/" "bin/" "app/" ".gitignore" "../" "./")
+
+ ("/Users/hiroki/Development/sotuken/" (21733 17140 0 0) "ruby/" "php/" "js/" ".DS_Store" "../" "./")
+
+ ("/Applications/MAMP/htdocs/" (21733 19551 0 0) "index.php" "index.html" "assets/" ".htaccess" ".DS_Store" ".#index.php" "../" "./")
+
+ ("/Applications/MAMP/" (21733 17198 0 0) "お読みください.rtf" "прочти.rtf" "tmp/" "Sequel Pro.app/" "README.rtf" "MAMP.app/" "logs/" "LISEZ-MOI.rtf" "LIESMICH.rtf" "licences/" "Library/" "LEAME.rtf" "Icon
+" "htdocs/" "fcgi-bin/" "db/" "conf/" "cgi-bin/" "bin/" ".DS_Store" "../" "./")
+
+ ("/Applications/" (21732 13658 0 0) "はがきデザインキット.app/" "YoruFukurou.app/" "Xcode.app/" "VirtualBox.app/" "Utilities/" "Tumblr.app/" "Time Machine.app/" "The Unarchiver.app/" "TextEdit.app/" "System Preferences.app/" "SyphonInject.app/" "Sublime Text.app/" "Stickies.app/" "Slack.app/" "Skype.app/" "Serato DJ.app/" "Serato DJ Intro.app/" "Sequel Pro.app/" "Safari.app/" "Reminders.app/" "rekordbox 3/" "QuickTime Player.app/" "Preview.app/" "Photo Booth.app/" "Pages.app/" "OpenOffice.app/" "OBS.app/" "Numbers.app/" "Notes.app/" "Mission Control.app/" "Messages.app/" "Maps.app/" "MAMP/" "Mail.app/" "Lingon 3.app/" "LINE.app/" "LimeChat.app/" "Launchpad.app/" "Kobito.app/" "Kiritori.app/" "Keynote.app/" "Joypad Connect.app/" "iTunes.app/" "iTerm.app/" "iPhoto.app/" "iMovie.app/" "Image Capture.app/" "iBooks.app/" "GoogleJapaneseInput.localized/" "Google Chrome.app/" "GitHub.app/" "GarageBand.app/" "Game Center.app/" "Font Book.app/" "Firefox.app/" "FaceTime.app/" "Emacs.app/" "DVD Player.app/" "Dropbox.app/" "Dictionary.app/" "Dashboard.app/" "Cyberduck.app/" "Contacts.app/" "Chess.app/" "Calendar.app/" "Calculator.app/" "Automator.app/" "Atom.app/" "App Store.app/" "Alfred.app/" "Adobe/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/hiroki/Applications/" (21580 37603 0 0) ".localized" "../" "./")
+
+ ("/Users/hiroki/Development/sotuken/php/bookshelf-php-mysql/" (21733 16846 0 0) "index.php" "index.html" "assets/" "../" "./")
+
+ ("/Users/hiroki/Development/sotuken/php/" (21732 27342 0 0) "bookshelf-php-mysql/" "../" "./")
+
+ ("/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-mongodb/public/" (21732 31746 0 0) "robots.txt" "index.html" "favicon.ico" "500.html" "422.html" "404.html" "../" "./")
+
+ ("/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-mongodb/" (21732 31553 0 0) "vendor/" "tmp/" "test/" "README.rdoc" "Rakefile" "public/" "log/" "lib/" "Gemfile.lock" "Gemfile" "db/" "config.ru" "config/" "bin/" "app/" ".gitignore" "../" "./")
+
+ ("/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-sqlite/public/" (21732 31146 0 0) "robots.txt" "index.html" "favicon.ico" "500.html" "422.html" "404.html" "../" "./")
+
+ ("/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-sqlite/" (21732 30963 0 0) "vendor/" "tmp/" "test/" "README.rdoc" "Rakefile" "public/" "log/" "lib/" "Gemfile.lock" "Gemfile" "db/" "config.ru" "config/" "bin/" "app/" ".gitignore" "../" "./")
+
+ ("/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-mysql/public/" (21732 30650 0 0) "robots.txt" "index.html" "favicon.ico" "500.html" "422.html" "404.html" "../" "./")
+
+ ("/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-mysql/app/views/layouts/" (21732 29491 0 0) "application.html.haml" "../" "./")
+
+ ("/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-mysql/app/views/" (21732 29072 0 0) "layouts/" "books/" "../" "./")
+
+ ("/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-mysql/app/" (21732 27213 0 0) "views/" "models/" "mailers/" "helpers/" "controllers/" "assets/" "../" "./")
+
+ ("/Users/hiroki/Development/sotuken/ruby/bookshelf-ruby-mysql/config/" (21732 27213 0 0) "secrets.yml" "routes.rb" "locales/" "initializers/" "environments/" "environment.rb" "database.yml" "boot.rb" "application.rb" "../" "./")
+
+ ("/Users/hiroki/Development/sotuken/ruby/" (21732 27301 0 0) "bookshelf-ruby-sqlite/" "bookshelf-ruby-mysql/" "bookshelf-ruby-mongodb/" "../" "./")
+
+ ("/Users/hiroki/Development/" (21732 25565 0 0) "sotuken/" "lib/" "Icon
+" "hobby/" "github/" "dely/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/who-is-masuda/app/views/layouts/" (21720 38818 0 0) "application.html.haml" ".#application.html.haml" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/who-is-masuda/config/" (21720 38205 0 0) "secrets.yml" "routes.rb" "mongoid.yml" "locales/" "initializers/" "environments/" "environment.rb" "boot.rb" "application.rb" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/who-is-masuda/app/controllers/users/" (21720 38147 0 0) "omniauth_callbacks_controller.rb" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/who-is-masuda/app/controllers/" (21720 37679 0 0) "users/" "posts_controller.rb" "concerns/" "application_controller.rb" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/who-is-masuda/app/views/posts/" (21720 37638 0 0) "show.json.jbuilder" "show.html.haml" "new.html.haml" "index.json.jbuilder" "index.html.haml" "edit.html.haml" "_form.html.haml" "../" "./")
+
+ ("/Users/hiroki/Development/dely/dely-api/app/controllers/shop_v1/me/" (21643 62009 0 0) "shop_settings_controller.rb" "shop_products_controller.rb" "shop_product_options_controller.rb" "shop_product_availabilities_controller.rb" "shop_delivery_zones_controller.rb" "shop_bases_controller.rb" "shop_availabilities_controller.rb" "shop_accounts_controller.rb" "../" "./")
+
+ ("/Users/hiroki/Development/dely/dely-api/config/" (21643 62009 0 0) "unicorn.rb" "secrets.yml" "schedule.rb" "routes.rb" "routes/" "newrelic.yml" "locales/" "initializers/" "environments/" "environment.rb" "deploy.rb" "deploy/" "database.yml" "boot.rb" "application.yml" "application.rb" "../" "./")
+
+ ("/Users/hiroki/Development/dely/dely-web/app/user/coffee/services/" (21644 32742 0 0) "utility_service.coffee" "search_address_service.coffee" "order_manager_service.coffee" "google_geocoding_service.coffee" "common.coffee" "breadcrumb_manager.coffee" "auth.coffee" "API.coffee" ".gitkeep" "../" "./")
+
+ ("/Users/hiroki/Development/dely/dely-web/app/shop/coffee/services/" (21644 34662 0 0) "utility_service.coffee" "shop_setting.coffee" "shop_info.coffee" "product.coffee" "order_setting.coffee" "common.coffee" "auth_service.coffee" ".gitkeep" "../" "./")
+
+ ("/Users/hiroki/Development/dely/dely-web/app/admin/coffee/controllers/" (21644 32742 0 0) "users_controller.coffee" "tags_controller.coffee" "shops_controller.coffee" "products_controller.coffee" "orders_controller.coffee" "login_controller.coffee" "index_controller.coffee" "header_controller.coffee" "deliverers_controller.coffee" "common_controller.coffee" "categories_controller.coffee" "admin_accounts_controller.coffee" ".gitkeep" "../" "./")
+
+ ("/Users/hiroki/Development/dely/dely-web/app/shop/coffee/controllers/" (21644 34180 0 0) "settings_controller.coffee" "products_controller.coffee" "orders_controller.coffee" "main_controller.coffee" "login_controller.coffee" "helps_controller.coffee" "deliveries_controller.coffee" "common_controller.coffee" ".gitkeep" "../" "./")
+
+ ("/Users/hiroki/Development/dely/dely-api/app/controllers/admin_v1/" (21643 62009 0 0) "zone_parents_controller.rb" "zone_bases_controller.rb" "user_settings_controller.rb" "user_locations_controller.rb" "user_bases_controller.rb" "user_accounts_controller.rb" "user_account_oauths_controller.rb" "shop_tags_controller.rb" "shop_settings_controller.rb" "shop_products_controller.rb" "shop_product_tags_controller.rb" "shop_product_options_controller.rb" "shop_product_option_metrics_controller.rb" "shop_product_availabilities_controller.rb" "shop_delivery_zones_controller.rb" "shop_categories_controller.rb" "shop_business_categories_controller.rb" "shop_bases_controller.rb" "shop_availabilities_controller.rb" "shop_accounts_controller.rb" "pickups_controller.rb" "order_details_controller.rb" "order_detail_options_controller.rb" "order_bases_controller.rb" "me/" "environments_controller.rb" "chain_products_controller.rb" "chain_product_options_controller.rb" "chain_bases_controller.rb" "chain_availabilities_controller.rb" "chain_accounts_controller.rb" "auths_controller.rb" "application_controller.rb" "admin_bases_controller.rb" "admin_accounts_controller.rb" "../" "./")
+
+ ("/Users/hiroki/Development/dely/dely-api/app/models/admin/" (21643 62009 0 0) "basis.rb" "account.rb" "../" "./")
+
+ ("/Users/hiroki/Development/dely/dely-api/app/models/user/" (21643 42143 0 0) "setting.rb" "point.rb" "location.rb" "credit_card.rb" "basis.rb" "account_oauth.rb" "account.rb" "../" "./")
+
+ ("/Users/hiroki/Development/dely/dely-api/app/models/chain/" (21643 62009 0 0) "tagging.rb" "product_tagging.rb" "product_option.rb" "product.rb" "categorizing.rb" "business_categorizing.rb" "basis.rb" "availability.rb" "account.rb" "../" "./")
+
+ ("/Users/hiroki/Development/dely/dely-api/db/migrate/" (21644 9365 0 0) "20141103105000_add_foreign_keys.rb" "20141103104439_create_chain_accounts.rb" "20141102132949_create_chain_product_taggings.rb" "20141102131740_create_shop_business_categorizings.rb" "20141030095501_create_chain_product_options.rb" "20141030095059_create_chain_products.rb" "20141030094909_create_chain_taggings.rb" "20141030094449_create_chain_categorizings.rb" "20141030093414_create_chain_business_categorizings.rb" "20141030092713_create_chain_availabilities.rb" "20141030091320_create_chain_bases.rb" "20141030084012_create_shop_taggings.rb" "20141030083847_create_shop_tags.rb" "20141030082254_create_shop_product_taggings.rb" "20141030082203_create_shop_product_tags.rb" "20141030072955_create_shop_business_categories.rb" "20140906164527_create_user_settings.rb" "20140906164215_create_device_tokens.rb" "20140906163755_create_user_locations.rb" "20140906163522_create_user_credit_cards.rb" "20140906162857_create_user_points.rb" "20140906162602_create_user_account_oauths.rb" "20140906162454_create_user_accounts.rb" "20140906162052_create_user_bases.rb" "20140906161542_create_station_bases.rb" "20140906161357_create_shop_settings.rb" "20140906161310_create_station_neighbors.rb" "20140906161222_create_shop_product_option_metrics.rb" "20140906161026_create_shop_product_options.rb" "20140906160923_create_shop_product_availabilities.rb" "20140906160544_create_shop_products.rb" "20140906160411_create_order_detail_options.rb" "20140906160346_create_order_details.rb" "20140906155857_create_order_bases.rb" "20140906155743_create_shop_categorizings.rb" "20140906155317_create_shop_categories.rb" "20140906155156_create_shop_delivery_zones.rb" "20140906154907_create_shop_availabilities.rb" "20140906154330_create_shop_bases.rb" "20140906154210_create_shop_accounts.rb" "20140906154112_add_sessions_table.rb" "20140906153855_create_pickups.rb" "20140906153719_create_notifications.rb" "20140906153616_create_media.rb" "20140906153432_create_likes.rb" "20140906153252_create_information.rb" "20140906153120_create_follows.rb" "20140906152728_create_delayed_jobs.rb" "20140906152604_create_admin_bases.rb" "20140906152484_create_zone_parents.rb" "20140906152154_create_zone_bases.rb" "20140906151900_create_admin_accounts.rb" "../" "./")
+
+ ("/Users/hiroki/Development/dely/dely-api/db/" (21643 62016 0 0) "seeds.rb" "seeds/" "schema.rb" "migrate/" "../" "./")
+
+ ("/Users/hiroki/Development/dely/dely-api/spec/factories/" (21643 62009 0 0) "zone_parents.rb" "zone_bases.rb" "user_settings.rb" "user_locations.rb" "user_bases.rb" "user_accounts.rb" "shop_settings.rb" "shop_products.rb" "shop_product_options.rb" "shop_product_option_metrics.rb" "shop_product_availabilities.rb" "shop_delivery_zones.rb" "shop_categories.rb" "shop_business_categories.rb" "shop_bases.rb" "shop_availabilities.rb" "shop_accounts.rb" "pickups.rb" "order_details.rb" "order_detail_options.rb" "order_bases.rb" "chain_products.rb" "chain_product_options.rb" "chain_bases.rb" "chain_availabilities.rb" "chain_accounts.rb" "admin_bases.rb" "admin_accounts.rb" ".gitkeep" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/who-is-masuda/config/initializers/" (21678 45742 0 0) "wrap_parameters.rb" "simple_form_bootstrap.rb" "simple_form.rb" "session_store.rb" "mime_types.rb" "kaminari_config.rb" "inflections.rb" "filter_parameter_logging.rb" "devise.rb" "cookies_serializer.rb" "backtrace_silencers.rb" "assets.rb" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/ugokuonaho/" (21678 45890 0 0) "tweets.txt" "test.rb" "Procfile" "old_tweets.txt" "Gemfile.lock" "Gemfile" "app.rb" ".git/" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/yes-or-no/app/assets/stylesheets/" (21680 59808 0 0) "welcome.scss" "questions.scss" "omniauth_callbacks.scss" "application.css.sass" "answers.scss" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/yes-or-no/app/assets/javascripts/" (21680 58998 0 0) "welcome.coffee" "questions.coffee" "omniauth_callbacks.coffee" "application.js" "answers.coffee" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/yes-or-no/config/" (21680 60870 0 0) "secrets.yml" "routes.rb" "mongoid.yml" "locales/" "initializers/" "environments/" "environment.rb" "boot.rb" "application.rb" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/yes-or-no/app/controllers/" (21680 62116 0 0) "welcome_controller.rb" "questions_controller.rb" "omniauth_callbacks_controller.rb" "concerns/" "application_controller.rb" "answers_controller.rb" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/yes-or-no/app/views/questions/" (21680 61868 0 0) "show.json.jbuilder" "show.html.haml" "new.html.haml" "index.json.jbuilder" "index.html.haml" "edit.html.haml" "_form.html.haml" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/watchlist/db/" (21703 10536 0 0) "seeds.rb" "schema.rb" "migrate/" "development.sqlite3" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/watchlist/app/models/" (21687 9817 0 0) "url.rb" "item.rb" "concerns/" ".keep" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/watchlist/app/assets/javascripts/" (21704 27730 0 0) "urls.coffee" "items.coffee" "application.js" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/watchlist/app/views/items/" (21700 60545 0 0) "index.html.haml" "../" "./")
+
+ ("/Users/hiroki/Desktop/" (21719 20682 0 0) "卒論サンプル.pdf" "修得単位確認シート2014.xlsx のエイリアス" "修得単位確認シート2014.xlsx" "Points.spritebuilder/" "index.html" "A6.pdf" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/watchlist/app/views/layouts/" (21700 58003 0 0) "application.html.haml" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/watchlist/app/controllers/" (21700 57978 0 0) "urls_controller.rb" "items_controller.rb" "concerns/" "application_controller.rb" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/watchlist/app/assets/stylesheets/" (21700 56940 0 0) "items.scss" "application.css" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/watchlist/app/views/urls/" (21700 56877 0 0) "edit.html.haml" "_form.html.haml" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/watchlist/app/assets/" (21686 36851 0 0) "stylesheets/" "javascripts/" "images/" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/watchlist/config/" (21687 10201 0 0) "secrets.yml" "routes.rb" "locales/" "initializers/" "environments/" "environment.rb" "database.yml" "boot.rb" "application.rb" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/watchlist/db/migrate/" (21686 43335 0 0) "20150114160719_create_items.rb" "20150114160543_create_urls.rb" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/watchlist/" (21687 8471 0 0) "vendor/" "tmp/" "test/" "README.rdoc" "Rakefile" "public/" "log/" "lib/" "Gemfile.lock" "Gemfile" "db/" "config.ru" "config/" "bin/" "app/" ".gitignore" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/watchlist/app/views/" (21686 37943 0 0) "urls/" "layouts/" "items/" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/watchlist/app/" (21686 36851 0 0) "views/" "models/" "mailers/" "helpers/" "controllers/" "assets/" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/yes-or-no/app/models/" (21680 62005 0 0) "user.rb" "question.rb" "concerns/" "answer.rb" ".keep" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/yes-or-no/app/views/welcome/" (21680 59935 0 0) "index.html.haml" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/yes-or-no/app/views/layouts/" (21680 59523 0 0) "application.html.haml" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/yes-or-no/app/views/" (21680 58998 0 0) "welcome/" "questions/" "omniauth_callbacks/" "layouts/" "answers/" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/yes-or-no/config/initializers/" (21680 58535 0 0) "wrap_parameters.rb" "simple_form_bootstrap.rb" "simple_form.rb" "session_store.rb" "mime_types.rb" "inflections.rb" "filter_parameter_logging.rb" "devise.rb" "cookies_serializer.rb" "backtrace_silencers.rb" "assets.rb" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/who-is-masuda/app/models/" (21658 59287 0 0) "user.rb" "post.rb" "permission.rb" "concerns/" ".keep" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/who-is-masuda/app/views/" (21672 16675 0 0) "users/" "posts/" "layouts/" "kaminari/" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/who-is-masuda/app/assets/stylesheets/" (21672 22699 0 0) "users/" "github-markdown.css" "bootstrap-variables.scss" "bootstrap-generators.scss" "application.css" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/who-is-masuda/app/assets/" (21658 56847 0 0) "stylesheets/" "javascripts/" "images/" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/yes-or-no/app/assets/" (21680 55696 0 0) "stylesheets/" "javascripts/" "images/" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/yes-or-no/app/" (21680 55696 0 0) "views/" "models/" "mailers/" "helpers/" "controllers/" "assets/" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/yes-or-no/" (21680 56024 0 0) "vendor/" "tmp/" "test/" "README.rdoc" "Rakefile" "public/" "log/" "lib/" "Gemfile.lock" "Gemfile" "db/" "config.ru" "config/" "bin/" "app/" ".gitignore" "../" "./")
+
+ ("/Users/hiroki/Development/hobby/who-is-masuda/" (21680 55868 0 0) "vendor/" "tmp/" "test/" "README.rdoc" "README.md" "Rakefile" "public/" "log/" "lib/" "Gemfile.lock" "Gemfile" "db/" "config.ru" "config/" "bin/" "app/" ".gitignore" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

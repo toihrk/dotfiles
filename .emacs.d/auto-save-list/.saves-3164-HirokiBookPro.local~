@@ -1,0 +1,8 @@
+/Users/hiroki/Development/dely/staging/dely-web/.gitignore
+/Users/hiroki/.emacs.d/#!Users!hiroki!Development!dely!staging!dely-web!.gitignore#
+/Users/hiroki/Development/dely/staging/dely-web/server.coffee
+/Users/hiroki/.emacs.d/#!Users!hiroki!Development!dely!staging!dely-web!server.coffee#
+/Users/hiroki/Development/dely/staging/dely-web/lib/config/passport.coffee
+/Users/hiroki/.emacs.d/#!Users!hiroki!Development!dely!staging!dely-web!lib!config!passport.coffee#
+/Users/hiroki/Development/dely/staging/dely-web/lib/controllers/oauth.coffee
+/Users/hiroki/.emacs.d/#!Users!hiroki!Development!dely!staging!dely-web!lib!controllers!oauth.coffee#
