@@ -12,3 +12,5 @@
 	required = true
 [alias]
  	m = merge --no-ff
+[merge]
+	ff = false
