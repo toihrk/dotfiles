@@ -1,19 +1,37 @@
 "*":
   editor:
     invisibles: {}
-    fontSize: 17
-  core:
-    themes: [
-      "atom-dark-ui"
-      "atom-dark-syntax"
-    ]
-  "emacs-mode":
-    hideTabs: false
-    hideSidebar: false
-    useEmacsCursor: true
-    useFuzzyFileFinder: false
-    useFuzzyBufferFinder: false
+    showInvisibles: true
+    showIndentGuide: true
+    fontFamily: "Menlo"
+    fontSize: 20
+  core: {}
   "exception-reporting":
-    userId: "3d729b1d-a55d-a6a2-131a-7f04b0f943ef"
+    userId: "ef5261e9-09f5-6036-1df1-de0612d03275"
   welcome:
     showOnStartup: false
+  "atom-beautify":
+    _analyticsUserId: "cd0f8ea4-c0ee-41ae-a9f5-330afe58fe83"
+    html_unformatted: [
+      "a"
+      "sub"
+      "sup"
+      "b"
+      "i"
+      "u"
+      "pre"
+    ]
+  linter: {}
+  "atom-color-highlight": {}
+  minimap: {}
+  "save-session":
+    dataSaveFolder: "/Users/mac/.atom/packages/save-session/projects"
+    project: "/Users/mac/Documents/vhosts/www.amway.co.jp/12_htdocs"
+    windowX: 9
+    windowY: 22
+    windowWidth: 1518
+    windowHeight: 1174
+    treeSize: 350
+".perl.source":
+  editor:
+    tabLength: 4
