@@ -1,7 +1,7 @@
 {
   "name": "autocomplete-emojis",
   "main": "./lib/autocomplete-emojis",
-  "version": "1.0.0",
+  "version": "2.2.0",
   "description": "Adds emoji autocompletion to autocomplete+",
   "repository": {
     "type": "git",
@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">=0.189.0 <2.0.0"
   },
   "dependencies": {
     "emoji-images": "^0.1.1",
@@ -20,26 +20,27 @@
     "grunt-apm": "0.0.1",
     "grunt-coffee-jshint": "^0.2.1",
     "grunt-contrib-watch": "^0.6.1",
-    "load-grunt-tasks": "^2.0.0",
+    "load-grunt-tasks": "^3.1.0",
+    "request": "^2.55.0",
     "time-grunt": "^1.0.0"
   },
   "providedServices": {
     "autocomplete.provider": {
       "versions": {
-        "1.0.0": "provide"
+        "2.0.0": "getProvider"
       }
     }
   },
-  "readme": "# autocomplete+ emojis suggestions [![Build Status](https://travis-ci.org/eqot/autocomplete-emojis.svg?branch=master)](https://travis-ci.org/eqot/autocomplete-emojis)\n\n[View the changelog](https://github.com/eqot/autocomplete-emojis/blob/master/CHANGELOG.md)\n\nAdds emoji autocompletion to autocomplete-plus.\n\n![autocomplete-emojis](https://dl.dropboxusercontent.com/u/972960/Documents/atom/atom-autocomplete-emojis/atom-autocomplete-emojis.gif)\n\n\n## Installation\n\nYou can install autocomplete-emojis using the Preferences pane.\n\nPlease make sure you have [autocomplete-plus](https://atom.io/packages/autocomplete-plus) installed as well.\n\n\n## Features\n\n* Shows autocompletion suggestions for emojis when typing ```:```\n* Opens [Emoji Cheat Sheet](http://www.emoji-cheat-sheet.com/) in browser\n  when you run the ```autocomplete-emojis:show-cheat-sheet``` command\n\n\n## Acknowledgements\n\n* [autocomplete-plus](https://atom.io/packages/autocomplete-plus) and\n  [its tutorial to create a new suggestion provider](https://github.com/atom-community/autocomplete-plus/wiki/Provider-API)\n  inspired me to create this package\n",
+  "readme": "# autocomplete+ emojis suggestions [![Build Status](https://travis-ci.org/eqot/autocomplete-emojis.svg?branch=master)](https://travis-ci.org/eqot/autocomplete-emojis)\n\n[View the changelog](https://github.com/eqot/autocomplete-emojis/blob/master/CHANGELOG.md)\n\nAdds unicode emoji (like 😄) and markdown emoji (like ```:smile:```) autocompletion to autocomplete-plus.\n\n![autocomplete-emojis](https://dl.dropboxusercontent.com/u/972960/Documents/atom/atom-autocomplete-emojis/atom-autocomplete-emojis.gif)\n\n\n## Installation\n\nYou can install autocomplete-emojis using the Preferences pane.\n\nPlease make sure you have [autocomplete-plus](https://atom.io/packages/autocomplete-plus) installed as well.\n\n\n## Features\n\n* Shows unicode and markdown emojis as suggestions when typing ```:``` and a word<br>\n　![smiley](https://dl.dropboxusercontent.com/u/972960/Documents/atom/atom-autocomplete-emojis/atom-autocomplete-emojis-smiley.png)\n* Shows only markdown emojis when typing ```::``` and a word<br>\n　![markdown-smiley](https://dl.dropboxusercontent.com/u/972960/Documents/atom/atom-autocomplete-emojis/atom-autocomplete-emojis-markdown-smiley.png)\n* Disables unicode and/or markdown in the setting<br>\n　![settings](https://dl.dropboxusercontent.com/u/972960/Documents/atom/atom-autocomplete-emojis/atom-autocomplete-emojis-settings.png)\n* Opens [Emoji Cheat Sheet](http://www.emoji-cheat-sheet.com/) for markdown emojis in browser\n  when you run the ```autocomplete-emojis:show-cheat-sheet``` command\n\n\n## Scopes\n\nPlease note that this package shows emoji suggestions in the scopes below.\n\n* .source.gfm\n* .text.html\n* .text.plain\n* .text.git-commit\n* .comment\n* .string\n\n\n## Acknowledgements\n\n* [autocomplete-plus](https://atom.io/packages/autocomplete-plus) and\n  [its document of the provider API](https://github.com/atom-community/autocomplete-plus/wiki/Provider-API)\n  inspired and helped me a lot to create this package\n* [gemoji](https://github.com/github/gemoji) gives [a JSON file](https://raw.githubusercontent.com/github/gemoji/master/db/emoji.json) for unicode emojis\n",
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/eqot/autocomplete-emojis/issues"
   },
   "homepage": "https://github.com/eqot/autocomplete-emojis",
-  "_id": "autocomplete-emojis@1.0.0",
-  "_shasum": "2b35b94de7d523840986e1b574a69aedf69dff10",
-  "_resolved": "file:../d-115224-88357-mvilt/package.tgz",
-  "_from": "../d-115224-88357-mvilt/package.tgz",
+  "_id": "autocomplete-emojis@2.2.0",
+  "_shasum": "407b43242136b032b84f40c1bc8a5a96845c33b8",
+  "_resolved": "file:../d-115322-32490-5fz37t/package.tgz",
+  "_from": "../d-115322-32490-5fz37t/package.tgz",
   "_atomModuleCache": {
     "version": 1,
     "dependencies": [
@@ -70,7 +71,8 @@
       ".coffee": [
         "lib/autocomplete-emojis.coffee",
         "lib/emoji-cheat-sheet.coffee",
-        "lib/emojis-provider.coffee"
+        "lib/emojis-provider.coffee",
+        "update.coffee"
       ],
       ".json": [
         "node_modules/emoji-images/json/emoticons.json",
@@ -81,7 +83,8 @@
         "node_modules/emoji-images/json/symbols.json",
         "node_modules/emoji-images/package.json",
         "node_modules/fuzzaldrin/package.json",
-        "package.json"
+        "package.json",
+        "properties.json"
       ]
     },
     "folders": [
