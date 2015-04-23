@@ -40,10 +40,6 @@ class MinimapElement extends HTMLElement
     @subscriptions = new CompositeDisposable
     @initializeContent()
 
-    @subscriptions.add atom.themes.onDidChangeActiveThemes =>
-      @invalidateCache()
-      @requestForcedUpdate()
-
     @observeConfig
       'minimap.displayMinimapOnLeft': (displayMinimapOnLeft) =>
         swapPosition = @minimap? and displayMinimapOnLeft isnt @displayMinimapOnLeft
@@ -83,6 +79,15 @@ class MinimapElement extends HTMLElement
     @subscriptions.add atom.views.pollDocument => @pollDOM()
     @measureHeightAndWidth()
     @attached = true
+
+    # Uses of `atom.styles.onDidAddStyleElement` instead of
+    # `atom.themes.onDidChangeActiveThemes`.
+    # Why?
+    # Currently, The styleElement will be removed first,
+    # and then re-add. So the `change` event has not be triggered.
+    @subscriptions.add atom.styles.onDidAddStyleElement =>
+      @invalidateCache()
+      @requestForcedUpdate()
 
   # Internal: DOM callback invoked when a new {MinimapElement} is detached
   # from the DOM.
@@ -214,9 +219,9 @@ class MinimapElement extends HTMLElement
           @quickSettingsSubscription = @quickSettingsElement.onDidDestroy =>
             @quickSettingsElement = null
 
-          @quickSettingsElement.attach()
           {top, left, right} = @canvas.getBoundingClientRect()
           @quickSettingsElement.style.top = top + 'px'
+          @quickSettingsElement.attach()
 
           if @displayMinimapOnLeft
             @quickSettingsElement.style.left = (right) + 'px'
@@ -325,14 +330,16 @@ class MinimapElement extends HTMLElement
 
     visibleAreaLeft = @minimap.getTextEditorScaledScrollLeft()
     visibleAreaTop = @minimap.getTextEditorScaledScrollTop() - @minimap.getScrollTop()
+    visibleWidth = Math.min(@canvas.width / devicePixelRatio, @width)
+
 
     @applyStyles @visibleArea,
-      width: @clientWidth + 'px'
+      width: visibleWidth + 'px'
       height: @minimap.getTextEditorScaledHeight() + 'px'
       transform: @makeTranslate(visibleAreaLeft, visibleAreaTop)
 
     @applyStyles @controls,
-      width: Math.min(@canvas.width / devicePixelRatio, @width) + 'px'
+      width: visibleWidth + 'px'
 
     canvasTop = @minimap.getFirstVisibleScreenRow() * @minimap.getLineHeight() - @minimap.getScrollTop()
 
@@ -365,7 +372,7 @@ class MinimapElement extends HTMLElement
   # Internal: Polling callback used to detect visibility and size changes.
   pollDOM: ->
     if @isVisible()
-      @requestForcedUpdate() unless !@wasVisible
+      @requestForcedUpdate() unless @wasVisible
 
       @measureHeightAndWidth(false)
 
@@ -456,7 +463,7 @@ class MinimapElement extends HTMLElement
     if atom.config.get('minimap.scrollAnimation')
       from = textEditor.getScrollTop()
       to = scrollTop
-      step = (now) => textEditor.setScrollTop(now)
+      step = (now) -> textEditor.setScrollTop(now)
       duration = atom.config.get('minimap.scrollAnimationDuration')
       @animate(from: from, to: to, duration: duration, step: step)
     else
@@ -497,12 +504,12 @@ class MinimapElement extends HTMLElement
 
     document.body.addEventListener('mousemove', mousemoveHandler)
     document.body.addEventListener('mouseup', mouseupHandler)
-    document.body.addEventListener('mouseout', mouseupHandler)
+    document.body.addEventListener('mouseleave', mouseupHandler)
 
-    @dragSubscription = new Disposable =>
+    @dragSubscription = new Disposable ->
       document.body.removeEventListener('mousemove', mousemoveHandler)
       document.body.removeEventListener('mouseup', mouseupHandler)
-      document.body.removeEventListener('mouseout', mouseupHandler)
+      document.body.removeEventListener('mouseleave', mouseupHandler)
 
   # Internal: The method called during the drag gesture.
   #

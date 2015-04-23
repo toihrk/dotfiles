@@ -1,7 +1,22 @@
+2.2.0 (Apr 13 2015)
+==================
+
+* Enable provider in git commit scope (by @despairblue)
+
+2.1.0 (Apr 11 2015)
+==================
+
+* Support unicode emojis as well as markdown emojis
+
+2.0.0 (Apr 8 2015)
+==================
+
+* Update code to use autocomplete-plus API v2.0.0
+
 1.0.0 (Feb 8 2015)
 ==================
 
-* Update code to use new autocomplete-plus API
+* Update code to use autocomplete-plus API v1.0.0
 
 0.7.1 (Jan 4 2015)
 ==================

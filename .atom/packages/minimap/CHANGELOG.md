@@ -1,3 +1,55 @@
+<a name="v4.7.6"></a>
+# v4.7.6 (2015-04-08)
+
+## :bug: Bug Fixes
+
+- Fix misplacement of the quick settings view in one-dark-ui ([40e6f05a](https://github.com/atom-minimap/minimap/commit/40e6f05ae44ed536fb8c0a63de9cb85f8dea6b79))
+- Fix visible area spreading outside minimap in one-dark-ui ([12aadd2c](https://github.com/atom-minimap/minimap/commit/12aadd2cd227b7ffe36401ff7a2530f25c59c64e))
+
+<a name="v4.7.5"></a>
+# v4.7.5 (2015-04-02)
+
+## :bug: Bug Fixes
+
+- Fix DOM polling requesting an update on every call ([075d1a60](https://github.com/atom-minimap/minimap/commit/075d1a60987855bcfb9c43df8f24edc14e7b6c58))
+
+## :racehorse: Performances
+
+- Register to styles changes only after being attached ([f466703c](https://github.com/atom-minimap/minimap/commit/f466703c100800a11310db289693bc0ef0f138dc))
+
+<a name="v4.7.4"></a>
+# v4.7.4 (2015-04-02)
+
+## :racehorse: Performances
+
+- Remove line causing method deoptimization ([2f945585](https://github.com/atom-minimap/minimap/commit/2f9455857bf329504f452321b20a62cc83cad686))
+
+<a name="v4.7.3"></a>
+# v4.7.3 (2015-04-02)
+
+## :bug: Bug Fixes
+
+- Fix unescaped invisibles regexp breaking render ([882ed5d7](https://github.com/atom-minimap/minimap/commit/882ed5d75d46532d676fb0276c33e131beda4771), [#308](https://github.com/atom-minimap/minimap/issues/308))
+
+<a name="v4.7.2"></a>
+# v4.7.2 (2015-04-02)
+
+- Improve cursor style when dragging the minimap visible area ([b66ab37f](https://github.com/atom-minimap/minimap/commit/b66ab37f199fbd8f7abf188bdeebb824c405bd70), [#307](https://github.com/atom-minimap/minimap/issues/307))
+
+<a name="v4.7.1"></a>
+# v4.7.1 (2015-03-31)
+
+## :bug: Bug Fixes
+
+- Fix minimap dragging stopped at the end of the canvas ([d4c02dfb](https://github.com/atom-minimap/minimap/commit/d4c02dfb73cda0b852f25720776bb151802407ee), [#306](https://github.com/atom-minimap/minimap/issues/306))
+
+<a name="v4.7.0"></a>
+# v4.7.0 (2015-03-30)
+
+## :bug: Bug Fixes
+
+- Fix not update when user-styles reload, ([af961750](https://github.com/atom-minimap/minimap/commit/af9617505fe4b217b34dc2ce1c0bd3f01fc34b73), [#303](https://github.com/atom-minimap/minimap/issues/303))
+
 <a name="v4.6.0"></a>
 # v4.6.0 (2015-03-11)
 

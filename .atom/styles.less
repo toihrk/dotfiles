@@ -7,19 +7,65 @@
  * If you are unfamiliar with LESS, you can read more about it here:
  * http://www.lesscss.org
  */
-
-.tree-view {
-
+@editor_bg: #1F2224;
+@alpha_white: rgba(255, 255, 255, 0.2);
+@alpha_gray: rgba(150, 150, 150, 0.2);
+body, html {
+  font-family: 'menlo';
 }
-
 // style the background and foreground colors on the atom-text-editor-element
 // itself
 atom-text-editor {
 
 }
-
 // To style other content in the text editor's shadow DOM, use the ::shadow
 // expression
 atom-text-editor::shadow .cursor {
 
+}
+// 非表示文字
+.invisible-character {
+  color: transparent;
+  .source & {
+    color: @alpha_white;
+    &.hard-tab {
+      position: relative;
+      color: transparent;
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 1px;
+        right: 1px;
+        content: "";
+        border-bottom: 1px solid @alpha_white;
+      }
+    }
+  }
+}
+.tree-view {
+  ol.entries.list-tree li {
+    font-size: 8pt;
+    span.icon:before {
+      font-size: 10pt;
+    }
+  }
+}
+.vertical {
+  .pane {
+    opacity:0.40;
+    &.active {
+      opacity: 1.0;
+    }
+  }
+  .panes .pane-row > *,
+  .panes .pane-column > * {
+    border-right: 1px solid @alpha_gray;
+  }
+}
+.editor {
+  .line.cursor-line {
+    background: @editor_bg;
+  }
+  .cursor {
+  }
 }

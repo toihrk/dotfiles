@@ -1,56 +1,63 @@
-{Range}  = require('atom')
+fs = require('fs')
+path = require('path')
 fuzzaldrin = require('fuzzaldrin')
 emoji = require('emoji-images')
 
 module.exports =
-class EmojisProvider
-  id: 'autocomplete-emojis-emojisprovider'
-  selector: '*'
-  wordRegex: /:[a-zA-Z0-9_\+-]*/g
+  selector: '.source.gfm, .text.html, .text.plain, .text.git-commit, .comment, .string'
+
+  wordRegex: /::?[\w\d_\+-]+$/
   emojiFolder: 'atom://autocomplete-emojis/node_modules/emoji-images/pngs'
+  properties: {}
+  keys: []
 
-  requestHandler: (options = {}) =>
-    return [] unless options.editor? and options.buffer? and options.cursor?
+  loadProperties: ->
+    fs.readFile path.resolve(__dirname, '..', 'properties.json'), (error, content) =>
+      return if error
 
-    prefix = @prefixForCursor(options.editor, options.buffer, options.cursor, options.position)
-    return [] unless prefix.length
+      @properties = JSON.parse(content)
+      @keys = Object.keys(@properties)
 
-    suggestions = @findSuggestionsForPrefix(prefix)
-    return [] unless suggestions?.length
-    return suggestions
+  getSuggestions: ({editor, bufferPosition}) ->
+    prefix = @getPrefix(editor, bufferPosition)
+    return [] unless prefix?.length >= 2
 
-  prefixForCursor: (editor, buffer, cursor, position) =>
-    return '' unless buffer? and cursor?
-    start = @getBeginningOfCurrentWordBufferPosition(editor, position, {wordRegex: @wordRegex})
-    end = cursor.getBufferPosition()
-    return '' unless start? and end?
-    buffer.getTextInRange(new Range(start, end))
+    if prefix.charAt(1) is ':'
+      isMarkdownEmojiOnly = true
+      replacementPrefix = prefix
+      prefix = prefix.slice(1)
 
-  getBeginningOfCurrentWordBufferPosition: (editor, position, options = {}) ->
-    return unless position?
-    currentBufferPosition = position
-    scanRange = [[currentBufferPosition.row, 0], currentBufferPosition]
-    beginningOfWordPosition = null
-    editor.backwardsScanInBufferRange (options.wordRegex), scanRange, ({range, stop}) ->
-      if range.end.isGreaterThanOrEqual(currentBufferPosition)
-        beginningOfWordPosition = range.start
-        stop()
-    beginningOfWordPosition
+    if atom.config.get('autocomplete-emojis.enableUnicodeEmojis') && not isMarkdownEmojiOnly
+      unicodeEmojis = @getUnicodeEmojiSuggestions(prefix)
 
-  findSuggestionsForPrefix: (prefix) ->
+    if atom.config.get('autocomplete-emojis.enableMarkdownEmojis')
+      markdownEmojis = @getMarkdownEmojiSuggestions(prefix, replacementPrefix)
+
+    return (unicodeEmojis || []).concat(markdownEmojis)
+
+  getPrefix: (editor, bufferPosition) ->
+    line = editor.getTextInRange([[bufferPosition.row, 0], bufferPosition])
+    line.match(@wordRegex)?[0] or ''
+
+  getUnicodeEmojiSuggestions: (prefix) ->
+    words = fuzzaldrin.filter(@keys, prefix.slice(1))
+    for word in words
+      {
+        text: @properties[word].emoji
+        replacementPrefix: prefix
+        rightLabel: word
+      }
+
+  getMarkdownEmojiSuggestions: (prefix, replacementPrefix) ->
     words = fuzzaldrin.filter(emoji.list, prefix)
-
-    suggestions = for word in words
+    for word in words
       emojiImageElement = emoji(word, @emojiFolder, 20)
       if emojiImageElement.match(/src="(.*\.png)"/)
         uri = RegExp.$1
         emojiImageElement = emojiImageElement.replace(uri, decodeURIComponent(uri))
 
-      suggestion =
-        word: word
-        prefix: prefix
-        label: emojiImageElement
-        renderLabelAsHtml: true
-      suggestion
-
-    return suggestions
+      {
+        text: word
+        replacementPrefix: replacementPrefix || prefix
+        rightLabelHTML: emojiImageElement
+      }

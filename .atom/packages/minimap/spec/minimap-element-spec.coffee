@@ -164,6 +164,12 @@ describe 'MinimapElement', ->
 
         expect(realOffsetTop(canvas)).toBeCloseTo(-2, -1)
 
+      it 'does not fail to update render the invisible char when modified', ->
+        atom.config.set 'editor.showInvisibles', true
+        atom.config.set 'editor.invisibles', cr: '*'
+
+        expect(-> nextAnimationFrame()).not.toThrow()
+
       it 'renders the visible line decorations', ->
         spyOn(minimapElement, 'drawLineDecorations').andCallThrough()
 
@@ -244,8 +250,8 @@ describe 'MinimapElement', ->
           nextAnimationFrame()
 
           expect(minimapElement.drawLines).toHaveBeenCalled()
-          expect(minimapElement.drawLines.calls[1].args[1]).toEqual(100)
-          expect(minimapElement.drawLines.calls[1].args[2]).toEqual(101)
+          expect(minimapElement.drawLines.argsForCall[1][1]).toEqual(100)
+          expect(minimapElement.drawLines.argsForCall[1][2]).toEqual(101)
 
       describe 'when the editor visibility change', ->
         it 'does not modify the size of the canvas', ->
@@ -261,6 +267,8 @@ describe 'MinimapElement', ->
 
         describe 'from hidden to visible', ->
           beforeEach ->
+            editorElement.style.display = 'none'
+            minimapElement.checkForVisibilityChange()
             spyOn(minimapElement, 'requestForcedUpdate')
             editorElement.style.display = ''
             minimapElement.pollDOM()
@@ -343,8 +351,8 @@ describe 'MinimapElement', ->
           {top, left} = visibleArea.getBoundingClientRect()
           originalTop = top
 
-          mousedown(visibleArea, left + 10, top + 10)
-          mousemove(visibleArea, left + 10, top + 50)
+          mousedown(visibleArea, x: left + 10, y: top + 10)
+          mousemove(visibleArea, x: left + 10, y: top + 50)
 
           nextAnimationFrame()
 
@@ -357,10 +365,10 @@ describe 'MinimapElement', ->
 
         it 'stops the drag gesture when the mouse is released outside the minimap', ->
           {top, left} = visibleArea.getBoundingClientRect()
-          mouseup(jasmineContent, left - 10, top + 80)
+          mouseup(jasmineContent, x: left - 10, y: top + 80)
 
           spyOn(minimapElement, 'drag')
-          mousemove(visibleArea, left + 10, top + 50)
+          mousemove(visibleArea, x: left + 10, y: top + 50)
 
           expect(minimapElement.drag).not.toHaveBeenCalled()
 
@@ -380,8 +388,8 @@ describe 'MinimapElement', ->
             {top, left} = visibleArea.getBoundingClientRect()
             originalTop = top
 
-            mousedown(visibleArea, left + 10, top + 10)
-            mousemove(visibleArea, left + 10, top + 50)
+            mousedown(visibleArea, x: left + 10, y: top + 10)
+            mousemove(visibleArea, x: left + 10, y: top + 50)
 
             nextAnimationFrame()
 
@@ -405,8 +413,8 @@ describe 'MinimapElement', ->
             {top, left} = visibleArea.getBoundingClientRect()
             originalTop = top
 
-            mousedown(visibleArea, left + 10, top + 10)
-            mousemove(visibleArea, left + 10, top + 50)
+            mousedown(visibleArea, x: left + 10, y: top + 10)
+            mousemove(visibleArea, x: left + 10, y: top + 50)
 
             nextAnimationFrame()
 
@@ -448,13 +456,15 @@ describe 'MinimapElement', ->
     #    ##    ## ##     ## ##   ### ##        ##  ##    ##
     #     ######   #######  ##    ## ##       ####  ######
 
-    describe 'when the atom themes are changed', ->
+    describe 'when the atom styles are changed', ->
       beforeEach ->
         nextAnimationFrame()
         spyOn(minimapElement, 'requestForcedUpdate').andCallThrough()
         spyOn(minimapElement, 'invalidateCache').andCallThrough()
 
-        atom.themes.emitter.emit 'did-change-active-themes'
+        styleNode = document.createElement('style')
+        styleNode.textContent = 'body{ color: #233; }'
+        atom.styles.emitter.emit 'did-add-style-element', styleNode
 
         waitsFor -> minimapElement.frameRequested
 
