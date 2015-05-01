@@ -13,9 +13,6 @@ alias df="df -h"
 
 alias su="su -l"
 
-alias vi="emacs"
-alias vim="emacs"
-
 alias g='git'
 alias r='rails'
 alias be="bundle exec"

@@ -93,6 +93,7 @@ export LC_MONETARY=C
 export LC_NUMERIC=C
 export LC_TIME=C
 
+export EDITOR=emacs
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
