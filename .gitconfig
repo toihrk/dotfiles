@@ -1,16 +1,24 @@
 [user]
 	name = toihrk
-	emial = toihrk@me.com
 	email = toihrk@me.com
+
 [core]
-	editor = emacs
+	editor = code --wait
+
+[init]
+  defaultBranch = main
+
 [color]
 	ui = auto
-[filter "media"]
-	clean = git media clean %f
-	smudge = git media smudge %f
-	required = true
-[alias]
- 	m = merge --no-ff
-[merge]
-	ff = false
+
+[diff]
+  tool = vscode
+
+[difftool "vscode"]
+  cmd = code --wait --new-window --diff $LOCAL $REMOTE
+
+[pull]
+  ff = only 
+
+[push]
+  default = current
