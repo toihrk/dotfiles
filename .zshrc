@@ -1,121 +1,155 @@
-# Alias
-alias where="command -v"
+autoload -Uz colors
+colors
 
-alias j="jobs -l"
-
-alias ls="ls"
-alias la="ls -a"
-alias lf="ls -F"
-alias ll="ls -l"
-
-alias du="du -h"
-alias df="df -h"
-
-alias su="su -l"
-
-alias g='git'
-alias r='rails'
-alias be="bundle exec"
-
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
-
-alias rm="rm -i"
-alias rmback="rm *~;rm .*~;rm *.bak"
-alias rmstore="rm .DS_Store; rm */.DS_Store"
-alias rmstorer="rm **/.DS_Store"
-
-alias h="history"
-alias x="exit"
-
-# forbid C-s
-stty stop undef
-
-# History
-HISTFILE=$HOME/.zsh-history
-HISTSIZE=100000
-SAVEHIST=100000
-setopt extended_history
-function history-all { history -E 1 }
-
-setopt share_history
-
-# Auto complete
-autoload -U compinit
+autoload -Uz compinit
 compinit
 
-# Case insensitive complete
+# 補完候補を詰めて表示
+setopt list_packed
+
+# 補完候補一覧でファイルの種別をマーク表示
+setopt list_types
+
+# 補完で小文字でも大文字にマッチさせる
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
-# Prompt
-PROMPT="%B %(?.%{$fg[green]%}.%{$fg[blue]%})%(?!(*'-') <!(*;-;%)? <)%{${reset_color}%}%b "
-RPROMPT="[%m:%n %~]"
-SPROMPT="correct: %R -> %r ? "
+# 補完候補をカーソルで選択
+zstyle ':completion:*:default' menu select=1
 
-case "${TERM}" in
-kterm*|xterm)
-    precmd() {
-        echo -ne "\033]0;${USER}@${HOST%%.*}:${PWD}\007"
-    }
-    ;;
-esac
+# 区切り文字の設定
+autoload -Uz select-word-style
+select-word-style default
+zstyle ':zle:*' word-chars "_-./;@"
+zstyle ':zle:*' word-style unspecifie
 
-# Some settings
-setopt autopushd
-setopt auto_list
-setopt auto_param_keys
-setopt auto_param_slash
-setopt hist_ignore_dups
-setopt magic_equal_subst
-setopt mark_dirs
-function chpwd() { ls }
+# emacsキーバインド
+bindkey -e
+
+# Ctrl+rでヒストリーのインクリメンタルサーチ
+bindkey '^r' history-incremental-pattern-search-backward
+
+# Ctrl+Dでログアウトしてしまうことを防ぐ
+setopt IGNOREEOF
+
+# 日本語ファイル名を表示可能にする
+setopt print_eight_bit
+
+# Ctrl+Sのロック, Ctrl+Qのロック解除を無効にする
+setopt no_flow_control
+
+# '#' 以降をコメントとして扱う
+setopt interactive_comments
+
+# 同時に起動したzshの間でヒストリを共有する
+setopt share_history
+
+# 同じコマンドをヒストリに残さない
+setopt hist_ignore_all_dups
+
+# ヒストリファイルに保存するとき、すでに重複したコマンドがあったら古い方を削除する
+setopt hist_save_nodups
+
+# ヒストリに保存するときに余分なスペースを削除する
+setopt hist_reduce_blanks
+
+# 補完候補が複数あるときに自動的に一覧表示する
+setopt auto_menu
+
+# 高機能なワイルドカード展開を使用する
+setopt extended_glob
+
+# cdコマンドを省略して、ディレクトリ名のみの入力で移動
 setopt auto_cd
 
-### Ls Color ###
-export LSCOLORS=Exfxcxdxbxegedabagacad
-export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
-export ZLS_COLORS=$LS_COLORS
-export CLICOLOR=true
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+# 自動でpushdを実行
+setopt auto_pushd
 
-### Enter setting ###
-function do_enter() {
+# pushdから重複を削除
+setopt pushd_ignore_dups
+
+# コマンドミスを修正
+setopt correct
+
+# cdの後にlsを実行
+chpwd() { ls -llG }
+
+# Enter押下後にpwd・ls・git statusの実行結果を表示
+do-enter() {
     if [ -n "$BUFFER" ]; then
         zle accept-line
         return 0
     fi
+
     echo
-    ls -la
-    # ls_abbrev
-    if [ "$(git rev-parse --is-inside-work-tree 2> /dev/null)" = 'true' ]; then
-        echo
-        echo -e "\e[0;33m--- git status ---\e[0m"
+    echo "${fg[green]}$(pwd)${reset_color}"
+    echo 
+    ls -allG
+    echo
+    if [ "$(git rev-parse --is-inside-work-tree 2> /dev/null)" = true ]; then
         git status -sb
+        echo
     fi
     zle reset-prompt
-    return 0
 }
-zle -N do_enter
-bindkey '^m' do_enter
+zle -N do-enter
+bindkey '^m' do-enter
 
-### RBENV ###
-export RUBY_CONFIGURE_OPTS="--enable-shared --with-readline-dir=$(brew --prefix readline) --with-openssl-dir=$(brew --prefix openssl) --with-libyaml-dir=$(brew --prefix libyaml)"
+# エイリアス
+alias g="git"
+alias x="exit"
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias ls='ls -GF'
+alias ll='ls -la'
+alias la='ls -a'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias df='df -h'
+alias du='du -h'
+alias mkdir='mkdir -p'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias h='history'
+alias j='jobs -l'
+alias tree='tree -C'
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# プロンプトの設定
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:git:*' formats '%F{green}[%b]%f'
+zstyle ':vcs_info:git:*' actionformats '%F{red}[%b|%a]%f'
 
-### npm ###
-source ~/.npm_completion
+# コマンド実行時間の計測
+preexec() {
+    timer=${timer:-$SECONDS}
+}
 
-# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT=/Users/hiroki/Development/lib/cocos2d-x-3.3/tools/cocos2d-console/bin
-export PATH=$COCOS_CONSOLE_ROOT:$PATH
+precmd() {
+    if [ $timer ]; then
+        timer_show=$(($SECONDS - $timer))
+        if [ $timer_show -ge 1 ]; then
+            echo "実行時間: ${timer_show}秒"
+        fi
+        unset timer
+    fi
+    vcs_info
+}
 
-# Add environment variable COCOS_X_ROOT for cocos2d-x
-export COCOS_X_ROOT=/Users/hiroki/Development/lib/cocos2d-x-3.3
-export PATH=$COCOS_X_ROOT:$PATH
+setopt prompt_subst
 
-# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
-export COCOS_TEMPLATES_ROOT=/Users/hiroki/Development/lib/cocos2d-x-3.3/templates
-export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+# 最後の2つのディレクトリを表示する関数
+function shorten_pwd {
+    local pwd="${PWD/#$HOME/~}"
+    local parts=(${(s:/:)pwd})
+    if [[ ${#parts} -gt 2 ]]; then
+        echo "${parts[-2]}/${parts[-1]}"
+    else
+        echo "$pwd"
+    fi
+}
+
+PROMPT='%F{cyan}$(shorten_pwd)%f ${vcs_info_msg_0_} %# '

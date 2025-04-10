@@ -1,103 +1,46 @@
-# Local
+# PATH設定 必要最低限
+typeset -aU _path
+_path=(
+    $HOME/dev/bin(N-/)
+    /opt/homebrew/bin(N-/)
+    /opt/homebrew/sbin(N-/)
+    /usr/local/bin(N-/)
+    /usr/local/sbin(N-/)
+    $path
+)
+
 typeset -U path
-path=(# Mac Homebrew
-      $HOME/brew/bin(N-/)
-      # System
-      /bin(N-/)
-      /sbin(N-/)
-      # User
-      $HOME/local/bin(N-/)
-      # Debian GNU/Linux
-      #/var/lib/gems/*/bin(N-/)
-      # MacPorts / Homebrew
-      /opt/local/bin(N-/)
-      # Solaris
-      #/opt/csw/bin(N-/)
-      #/usr/sfw/bin(N-/)
-      # Cygwin
-      #/cygdrive/c/meadow/bin(N-/)
-      # System
-      /usr/local/bin(N-/)
-      /usr/bin(N-/)
-      /usr/sbin(N-/)
-      /usr/games(N-/)
-      /usr/local(N-/)
-      # RCodeTools
-      $HOME/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rcodetools-0.8.5.0/bin/(N-/)
-      # Temporary
-      $HOME/.phantomjs/bin(N-/))
+path=($_path)
 
-# SUDO
-typeset -xT SUDO_PATH sudo_path
-typeset -U sudo_path
-sudo_path=({,/usr/pkg,/usr/local,/usr}/sbin(N-/))
-
-# MAN
-typeset -U manpath
-manpath=(# User
-         $HOME/local/share/man(N-/)
-         # MacPorts / Homebrew
-         /opt/local/share/man(N-/)
-         # Solaris
-         #/opt/csw/share/man(N-/)
-         #/usr/sfw/share/man(N-/)
-         # System
-         /usr/local/share/man(N-/)
-         /usr/share/man(N-/))
-
-if
- type lv > /dev/null 2>&1; then
-    ## Use lv
-    export PAGER="lv"
-else
-    ## if has not lv , Use less
-    export PAGER="less"
-fi
-
-# lv config
-if [ "$PAGER" = "lv" ]; then
-    export LV="-c -l"
-else
-    alias lv="$PAGER"
-fi
-
-# grep config
-# if type ggrep > /dev/null 2>&1; then
-#     alias grep=ggrep
-# fi
-# grep_version="$(grep --version | head -n 1 | sed -e 's/^[^0-9.]*\([0-9.]*\)$/\1/')"
-# export GREP_OPTIONS
-# GREP_OPTIONS="--binary-files=without-match"
-# case "$grep_version" in
-#     1.*|2.[0-4].*|2.5.[0-3])
-# 	;;
-#     *)
-# 	GREP_OPTIONS="--directories=recurse $GREP_OPTIONS"
-# 	;;
-# esac
-# GREP_OPTIONS="--exclude=\*.tmp $GREP_OPTIONS"
-# if grep --help | grep -q -- --exclude-dir; then
-#     GREP_OPTIONS="--exclude-dir=.svn $GREP_OPTIONS"
-#     GREP_OPTIONS="--exclude-dir=.git $GREP_OPTIONS"
-#     GREP_OPTIONS="--exclude-dir=.deps $GREP_OPTIONS"
-#     GREP_OPTIONS="--exclude-dir=.libs $GREP_OPTIONS"
-# fi
-# if grep --help | grep -q -- --color; then
-#     GREP_OPTIONS="--color=auto $GREP_OPTIONS"
-# fi
-
-export LC_COLLATE=C
+# 基本設定
+## ロケール設定
+export LANG=ja_JP.UTF-8
+export LC_MESSAGES=ja_JP.UTF-8
 export LC_CTYPE=ja_JP.UTF-8
-export LC_MESSAGES=C
-export LC_MONETARY=C
-export LC_NUMERIC=C
-export LC_TIME=C
+export LC_COLLATE=ja_JP.UTF-8
+export LC_TIME=ja_JP.UTF-8
+export LC_NUMERIC=ja_JP.UTF-8
+export LC_MONETARY=ja_JP.UTF-8
 
-export EDITOR=emacs
+## エディタ設定
+export EDITOR="code --wait"
+export VISUAL="code --wait"
 
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init - zsh)"
+## ページャー設定
+export PAGER="less"
+export LESS='-R'
 
-# nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+# 表示設定
+export LSCOLORS=gxfxcxdxbxegedabagacad
+export LS_COLORS='di=01;36:ln=01;35:so=01;32:ex=01;31:bd=40;33;01:cd=40;33;01:su=37;41:sg=30;43:tw=30;42:ow=34;42'
+export ZLS_COLORS=$LS_COLORS
+export CLICOLOR=true
+export TERM=xterm-256color
+
+# ヒストリ設定
+export HISTFILE=~/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=10000
+
+# ディレクトリ設定
+export cdpath=(~)
